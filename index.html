@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaRo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<div id="form-status"></div>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Especialista en Reparación de Computadoras</h1> <p>Soluciones rápidas y efectivas para tu equipo, servicio remoto y presencial.</p>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi"><i class="fas fa-user"></i> Sobre mí</a></li>
+                <li><a href="#testimonios"><i class="fas fa-lightbulb"></i> Testimoios</a></li>
+                <li><a href="#proyectos"><i class="fas fa-project-diagram"></i>Servicios</a></li>
+                <li><a href="#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Sobre mí -->
+    <section id="sobre-mi" class="section">
+        <div class="container sobre-mi-container">
+            <div class="sobre-mi-texto">
+                <h2>Sobre mí</h2>
+                <p>
+                    Hola, soy MAteo ROlon, un especialista en reparación de computadoras con más de 10 años de experiencia. Me dedico a ofrecer soluciones rápidas y eficaces, tanto de manera presencial como remota, para que tu equipo funcione al máximo rendimiento. Mi enfoque es resolver problemas técnicos con profesionalismo y compromiso, brindándote la tranquilidad de tener tu computadora en las mejores manos.
+                </p>
+                <a href="#contacto" class="btn">Contactame</a>
+            </div>
+            <div class="sobre-mi-imagen">
+                <img src="assets/image.png" alt="Foto de perfil">
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonios" class="section habilidades-section">
+        <div class="container">
+            <h2>Testimonios de Nuestros Clientes</h2>
+            <div class="habilidades-grid">
+    
+                <!-- Testimonio 1 -->
+                <div class="proyecto">
+                    <div class="carrusel">
+                        <div class="slides">
+                            <img src="assets/Diseño sin título.png" alt="Lucas recibiendo ayuda con Office">
+                        </div>
+                    </div>
+                    <h3>Lucas: Activación de Office en Minutos</h3>
+                    <p>"Necesitaba Office con urgencia para un proyecto. En cuestión de minutos, instalaron y activaron la suite. ¡Servicio rápido y eficiente!"</p>
+                </div>
+    
+                <!-- Testimonio 2 -->
+                <div class="proyecto">
+                    <div class="carrusel">
+                        <div class="slides">
+                            <img src="assets/1gg.jpeg" alt="Santino mejorando los FPS en juegos">
+                        </div>
+                    </div>
+                    <h3>Santino: Recuperó los FPS en Sus Juegos</h3>
+                    <p>"Mi PC estaba muy lenta y los juegos no corrían bien. Tras un diagnóstico, eliminaron varios virus que estaban afectando el rendimiento. Ahora todo funciona perfecto y los FPS están de vuelta."</p>
+                </div>
+    
+                <!-- Testimonio 3 -->
+                <div class="proyecto">
+                    <div class="carrusel">
+                        <div class="slides">
+                            <img src="assets/Diseño sin título (2).png" alt="Martina activando su Windows">
+                        </div>
+                    </div>
+                    <h3>Martina: Windows Activado Permanentemente</h3>
+                    <p>"Estaba cansada de la marca de agua de 'Activar Windows'. Con una conexión remota, solucionaron el problema en solo 15 minutos. ¡Increíble!"</p>
+                </div>
+    
+                <!-- Testimonio 4 -->
+                <div class="proyecto">
+                    <div class="carrusel">
+                        <div class="slides">
+                            <img src="assets/Diseño sin título (1).png" alt="Joa recuperando su conexión WiFi">
+                        </div>
+                    </div>
+                    <h3>Joa: WiFi Recuperado al Instante</h3>
+                    <p>"Mi notebook no detectaba WiFi. Tras un diagnóstico rápido, instalaron los controladores necesarios y todo volvió a funcionar como nuevo."</p>
+                </div>
+    
+                <!-- Testimonio 5 -->
+                <div class="proyecto">
+                    <div class="carrusel">
+                        <div class="slides">
+                            <img src="assets/Diseño sin título (3).png" alt="Valentina optimizando su PC">
+                        </div>
+                    </div>
+                    <h3>Valentina: Optimización Completa de su PC</h3>
+                    <p>"Mi computadora era lenta incluso para tareas básicas. Realizaron una limpieza, actualizaron drivers y ajustaron configuraciones clave. ¡El cambio fue increíble!"</p>
+                </div>
+    
+                <!-- Testimonio 6 -->
+                <div class="proyecto">
+                    <div class="carrusel">
+                        <div class="slides">
+                            <img src="assets/Diseño sin título (4).png" alt="Julián activando Office para su trabajo">
+                        </div>
+                    </div>
+                    <h3>Julián: Office Activado para su Trabajo</h3>
+                    <p>"Tenía problemas con una versión no activada de Office. El equipo me ayudó a instalar y activar la herramienta que necesitaba para mis proyectos laborales. Todo en menos de media hora."</p>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+    
+    <style>
+        .habilidades-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+    
+        .proyecto {
+            background: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+    
+        .carrusel img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+    
+        h3 {
+            font-size: 1.5rem;
+            margin: 15px 0;
+            color: #333;
+        }
+    
+        p {
+            font-size: 1rem;
+            color: #666;
+        }
+    </style>
+    
+    
+    <style>
+        .precio {
+            color: #28a745; /* Verde */
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .precio-label {
+            font-weight: normal;
+            font-size: 1em;
+            color: #333;
+        }
+        .precio-ars {
+            font-size: 1em;
+            color: #666;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #28a745;
+            color: #fff;
+            padding: 10px 20px;
+            margin-top: 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+        }
+        .btn:hover {
+            background-color: #218838;
+        }
+    </style>
+    
+
+    <!-- Sección Proyectos -->
+<!-- Sección Proyectos -->
+<section id="proyectos" class="section">
+    <div class="container">
+        <h2>Servicios</h2>
+        <div class="proyectos-grid">
+            <!-- SERVICIO 1: Optimización de Computadoras -->
+            <div class="proyecto">
+                <div class="carrusel">
+                    <div class="slides">
+                        <img src="assets/b.png" alt="Imagen 1 del Proyecto 1">
+                    </div>
+                </div>
+                <h3>Optimización de Computadoras</h3>
+                <p>Mejora el rendimiento de tu PC eliminando archivos innecesarios, actualizando drivers y ajustando configuraciones clave.</p>
+                <p class="price"><span class="precio-label">Costo del servicio:</span> <strong class="precio">$20 USD</strong> <span class="precio-ars">(20,000 ARS en Argentina)</span></p>
+                <ul>
+                    <li>Eliminación de archivos basura y temporales.</li>
+                    <li>Actualización de controladores y software.</li>
+                    <li>Mejora en el inicio y apagado del sistema.</li>
+                    <li>Ajustes para un rendimiento más rápido.</li>
+                </ul>
+                <a href="https://wa.me/543472595523?text=Hola%20Me%20interesa%20el%20servicio%20de%20Optimización%20de%20Computadoras.%20Quisiera%20más%20información." class="btn" target="_blank">Solicitar Este Servicio</a>
+            </div>
+
+            <!-- SERVICIO 2: Activación de Windows -->
+            <div class="proyecto">
+                <div class="carrusel">
+                    <div class="slides">
+                        <img src="assets/c.jpg" alt="Imagen 1 del Proyecto 2">
+                    </div>
+                </div>
+                <h3>Activación de Windows</h3>
+                <p>Activa tu sistema operativo de manera segura y confiable.</p>
+                <p class="price"><span class="precio-label">Costo del servicio:</span> <strong class="precio">$10 USD</strong> <span class="precio-ars">(10,000 ARS en Argentina)</span></p>
+                <ul>
+                    <li>Activación legítima y segura de Windows.</li>
+                    <li>Proceso rápido y sin complicaciones.</li>
+                    <li>Garantía de funcionamiento sin interrupciones.</li>
+                </ul>
+                <a href="https://wa.me/543472595523?text=Hola%20Me%20interesa%20el%20servicio%20de%20Activación%20de%20Windows.%20Quisiera%20más%20información." class="btn" target="_blank">Solicitar Este Servicio</a>
+            </div>
+
+            <!-- SERVICIO 3: Instalación y Activación de Office -->
+            <div class="proyecto">
+                <div class="carrusel">
+                    <div class="slides">
+                        <img src="assets/d.png" alt="Imagen 1 del Proyecto 3">
+                    </div>
+                </div>
+                <h3>Instalación y Activación de Office</h3>
+                <p>Instala y activa las aplicaciones de Microsoft Office en tu computadora, asegurando que tengas todas las herramientas necesarias.</p>
+                <p class="price"><span class="precio-label">Costo del servicio:</span> <strong class="precio">$15 USD</strong> <span class="precio-ars">(15,000 ARS en Argentina)</span></p>
+                <ul>
+                    <li>Instalación de las aplicaciones de Office (Word, Excel, PowerPoint, etc.).</li>
+                    <li>Activación de la suite para un uso completo.</li>
+                    <li>Configuración inicial para un rendimiento óptimo.</li>
+                </ul>
+                <a href="https://wa.me/543472595523?text=Hola%20Me%20interesa%20el%20servicio%20de%20Instalación%20y%20Activación%20de%20Office.%20Quisiera%20más%20información." class="btn" target="_blank">Solicitar Este Servicio</a>
+            </div>
+
+            <!-- SERVICIO 4: Detección de Errores y Fallas por Controladores -->
+            <div class="proyecto">
+                <div class="carrusel">
+                    <div class="slides">
+                        <img src="assets/f.jpeg" alt="Imagen 1 del Proyecto 4">
+                    </div>
+                </div>
+                <h3>Detección de Errores y Fallas por Controladores</h3>
+                <p>Identificamos y solucionamos problemas relacionados con controladores que afectan el rendimiento y estabilidad del sistema.</p>
+                <p class="price"><span class="precio-label">Costo del servicio:</span> <strong class="precio">$18 USD</strong> <span class="precio-ars">(18,000 ARS en Argentina)</span></p>
+                <ul>
+                    <li>Escaneo completo de controladores de hardware.</li>
+                    <li>Detección y corrección de problemas relacionados con drivers.</li>
+                    <li>Mejora en la estabilidad y rendimiento del sistema.</li>
+                </ul>
+                <a href="https://wa.me/543472595523?text=Hola%20Me%20interesa%20el%20servicio%20de%20Detección%20de%20Errores%20y%20Fallas%20por%20Controladores.%20Quisiera%20más%20información." class="btn" target="_blank">Solicitar Este Servicio</a>
+            </div>
+
+            <!-- SERVICIO 5: Acceso a Drive con Sistemas Operativos Optimizados -->
+            <div class="proyecto">
+                <div class="carrusel">
+                    <div class="slides">
+                        <img src="assets/j.png" alt="Imagen 1 del Proyecto 5">
+                    </div>
+                </div>
+                <h3>Acceso a Drive con Sistemas Operativos Optimizados</h3>
+                <p>Obtén acceso a una colección de sistemas operativos optimizados, como MiniOS, KernelOS y ChotOS, junto con un video tutorial para su instalación y uso.</p>
+                <p class="price"><span class="precio-label">Costo del servicio:</span> <strong class="precio">$7 USD</strong> <span class="precio-ars">(7,000 ARS en Argentina)</span></p>
+                <ul>
+                    <li>Acceso a varias versiones de Windows optimizadas.</li>
+                    <li>Optimización de rendimiento y recursos.</li>
+                    <li>Video tutorial para instalación y configuración.</li>
+                </ul>
+                <a href="https://wa.me/543472595523?text=Hola%20Me%20interesa%20el%20servicio%20de%20Acceso%20a%20Drive%20con%20Sistemas%20Operativos%20Optimizados.%20Quisiera%20más%20información." class="btn" target="_blank">Solicitar Este Servicio</a>
+            </div>
+
+            <!-- SERVICIO 6: Acceso a Carpeta de Optimización -->
+            <div class="proyecto">
+                <div class="carrusel">
+                    <div class="slides">
+                        <img src="assets/h.png" alt="Imagen 1 del Proyecto 6">
+                    </div>
+                </div>
+                <h3>Acceso a Carpeta de Optimización</h3>
+                <p>Obtén acceso a una carpeta con todo lo que necesitas para optimizar tu PC, incluyendo herramientas y un video tutorial sobre cómo realizar la optimización.</p>
+                <p class="price"><span class="precio-label">Costo del servicio:</span> <strong class="precio">$7 USD</strong> <span class="precio-ars">(7,000 ARS en Argentina)</span></p>
+                <ul>
+                    <li>Acceso a herramientas de optimización de PC.</li>
+                    <li>Instrucciones claras para mejorar el rendimiento de tu sistema.</li>
+                    <li>Video tutorial detallado sobre el proceso de optimización.</li>
+                </ul>
+                <a href="https://wa.me/543472595523?text=Hola%20Me%20interesa%20el%20servicio%20de%20Acceso%20a%20Carpeta%20de%20Optimización.%20Quisiera%20más%20información." class="btn" target="_blank">Solicitar Este Servicio</a>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<style>
+    .precio {
+        color: #28a745; /* Verde */
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    .precio-label {
+        font-weight: normal;
+        font-size: 1em;
+        color: #333;
+    }
+    .precio-ars {
+        font-size: 1em;
+        color: #666;
+    }
+    .btn {
+        display: inline-block;
+        background-color: #28a745;
+        color: #fff;
+        padding: 10px 20px;
+        margin-top: 15px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        text-align: center;
+    }
+    .btn:hover {
+        background-color: #218838;
+    }
+</style>
+
+<style>
+    .precio {
+        color: #28a745; /* Verde */
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    .precio-label {
+        font-weight: normal;
+        font-size: 1em;
+        color: #333;
+    }
+    .precio-ars {
+        font-size: 1em;
+        color: #666;
+    }
+</style>
+
+
+
+
+
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="section contacto-section">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>Sígueme en mis redes sociales o envíame un mensaje directamente.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/mateo-rolon-0b7492257/" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://www.instagram.com/maro_064" target="_blank" class="social-link">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="mailto:maroservtec@gmail.com" target="_blank" class="social-link">
+                    <i class="fas fa-envelope"></i> Gmail
+                </a>
+                <a href="https://wa.me/543472595523" target="_blank" class="social-link">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Especialista reparación de computadora. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
