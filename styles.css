@@ -377,6 +377,56 @@ footer .social-links a:hover {
 }
 
 
+#servicio-remoto {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.servicio-remoto-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.explicacion, .instrucciones {
+    flex: 1;
+    min-width: 280px;
+}
+
+.grafico {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+}
+
+h3 {
+    color: #333;
+}
+
+p, ul, ol {
+    color: #666;
+}
+
+a {
+    color: #28a745;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+video {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
 
 
