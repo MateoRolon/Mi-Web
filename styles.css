@@ -25,15 +25,16 @@ header {
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 0.5rem;
     font-weight: 700;
 }
 
 header p {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
+/* Navegación */
 nav ul {
     list-style: none;
     padding: 0;
@@ -41,10 +42,11 @@ nav ul {
     justify-content: center;
     gap: 2rem;
     margin-top: 1rem;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias filas */
 }
 
 nav ul li {
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 nav ul li a {
@@ -55,6 +57,26 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #ffcc00;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Cambia los elementos a una lista vertical */
+        gap: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    nav ul li {
+        font-size: 1rem;
+    }
 }
 
 /* Sección */
